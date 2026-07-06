@@ -1,36 +1,32 @@
-# ECTE331 - Real-Time Embedded Systems Project
+# ECTE331 - Real-Time Embedded Systems
 
-Java implementations for ECTE331 coursework.
+Java implementations for the ECTE331 coursework at the University of Wollongong.
 
-## Part 1 - Fault-Tolerant Drone Navigation
-Triple Modular Redundancy (TMR) system with three altitude sensors, majority voting, and SAFE MODE.
+## Structure
 
-**Run:**
+- **Part1_DroneNavigation** - Fault-tolerant drone altitude system using Triple Modular Redundancy (TMR)
+- **Part2_RoboticArm** - Multi-threaded robotic arm controller (Tasks 1–6)
+- **PartB_ThreadSync** - Thread synchronisation using semaphores
+- **dashboard** - Interactive web dashboard for visualising simulations
+
+## How to Run
+
+### Part 1
 ```
 cd Part1_DroneNavigation
 javac *.java
 java DroneNavigationSystem
 ```
 
-## Part 2 - Real-Time Robotic Arm Controller
-Multi-threaded robotic arm simulation covering synchronisation, priority inversion, priority inheritance, and priority ceiling protocols.
-
-**Run (compile once, then run any task):**
+### Part 2
 ```
 cd Part2_RoboticArm
 javac *.java
 java Task1_BasicImpl
-java Task2_Synchronization
-java Task3_PriorityInversion
-java Task4_PriorityInheritance
-java Task5_PriorityCeiling
 java Task6_Performance
 ```
 
-## Part B - Thread Synchronisation and Communication
-Two cooperating threads with semaphore-based dependency enforcement, verified over 1000 iterations.
-
-**Run:**
+### Part B
 ```
 cd PartB_ThreadSync
 javac *.java
